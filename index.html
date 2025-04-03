@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothes Shopping</title>
+    <title>Home - Fashion Store</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
@@ -11,37 +11,40 @@
     <header>
         <h1>Welcome to Fashion Store</h1>
         <nav>
-            <a href="#login">Login</a>
-            <a href="#products">Products</a>
-            <a href="#orders">Orders</a>
+            <a href="login.html">Login</a>
+            <a href="products.html">Products</a>
+            <a href="orders.html">Orders</a>
         </nav>
     </header>
     
-    <section id="login">
-        <h2>Login / Sign Up</h2>
-        <form id="loginForm">
-            <input type="email" placeholder="Enter Email" required>
-            <input type="password" placeholder="Enter Password" required>
-            <button type="submit">Login</button>
-        </form>
+    <section id="hero">
+        <img src="hero-banner.jpg" alt="Fashion Store Banner" class="hero-image">
+        <h2>Shop the latest trends in fashion</h2>
+        <p>Find your perfect outfit today.</p>
+        <a href="products.html" class="btn">Shop Now</a>
     </section>
     
-    <section id="products">
-        <h2>Available Products</h2>
-        <div class="product" onclick="selectProduct('Shirt')">
-            <img src="shirt.jpg" alt="Shirt">
-            <p>Stylish Shirt</p>
-        </div>
-        <div class="product" onclick="selectProduct('Jeans')">
-            <img src="jeans.jpg" alt="Jeans">
-            <p>Denim Jeans</p>
+    <section id="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="shirt.jpg" alt="Stylish Shirt">
+                <p>Stylish Shirt</p>
+            </div>
+            <div class="product">
+                <img src="jeans.jpg" alt="Denim Jeans">
+                <p>Denim Jeans</p>
+            </div>
+            <div class="product">
+                <img src="dress.jpg" alt="Elegant Dress">
+                <p>Elegant Dress</p>
+            </div>
         </div>
     </section>
     
-    <section id="orderDetails">
-        <h2>Order Details</h2>
-        <p id="orderInfo">Select a product to see details.</p>
-        <button onclick="trackOrder()">Track Order</button>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Fashion Store brings you the latest styles at the best prices.</p>
     </section>
     
     <footer>
