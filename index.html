@@ -1,54 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Fashion Store</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FashionLimit</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #f4f4f4;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .brands {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .brands img {
+      width: 100px;
+      height: auto;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+
+    .feature-item {
+      text-align: center;
+      flex: 1 1 250px;
+    }
+
+    .feature-item img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .offerings-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 40px 0 20px;
+    }
+
+    .offerings {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .offering-item {
+      text-align: center;
+      flex: 1 1 200px;
+    }
+
+    .offering-item img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Fashion Store</h1>
-        <nav>
-            <a href="login.html">Login</a>
-            <a href="products.html">Products</a>
-            <a href="orders.html">Orders</a>
-        </nav>
-    </header>
-    
-    <section id="hero">
-        <img src="poster.png" alt="Fashion Store Banner" class="hero-image">
-        <h2>Shop the latest trends in fashion</h2>
-        <p>Find your perfect outfit today.</p>
-        <a href="products.html" class="btn">Shop Now</a>
-    </section>
-    
-    <section id="featured-products">
-        <h2>Featured Products</h2>
-        <div class="product-grid">
-            <div class="product">
-                <img src="download(1).jpeg" alt="Stylish Shirt">
-                <p>Stylish Shirt</p>
-            </div>
-            <div class="product">
-                <img src="download.jpeg" alt="Denim Jeans">
-                <p>Denim Jeans</p>
-            </div>
-            <div class="product">
-                <img src="download (2).jpeg" alt="Elegant Dress">
-                <p>Elegant Dress</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Fashion Store brings you the latest styles at the best prices.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Fashion Store</p>
-    </footer>
+  <header>
+    <div class="logo-container">
+      <img src="o.jpg" alt="FashionLimit Logo" class="logo" />
+      <h1>FashionLimit</h1>
+    </div>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="products.html">Home</a>
+      <a href="orders.html">Orders</a>
+      <a href="#">Contact</a>
+      <a href="#"><button style ="color: rgb(8, 8, 8); text-emphasis: bold;"><b>JOIN NOW</b></button></a>
+    </nav>
+  </header>
+
+  <section class="brands">
+    <img src="adi.jpg" alt="Brand 1" />
+    <img src="zara.jpeg" alt="Brand 2" />
+    <img src="nike.jpg" alt="Brand 3" />
+    <img src="OIP (1).jpeg" alt="Brand 4" />
+  </section>
+
+  <section class="features">
+    <div class="feature-item">
+      <img src="f.jpg" alt="Stylish" />
+      <p>Stylish</p>
+    </div>
+    <div class="feature-item">
+      <img src="s.jpg" alt="Trendy" />
+      <p>Trendy</p>
+    </div>
+    <div class="feature-item">
+      <img src="3.jpg" alt="Chic" />
+      <p>Chic</p>
+    </div>
+  </section>
+
+  <h2 class="offerings-title">Our Product Offerings</h2>
+  <section class="offerings">
+    <div class="offering-item">
+      <img src="C:\Users\chara\Downloads\4.jpg" alt="Unique Designs" />
+      <p>Unique Designs</p>
+    </div>
+    <div class="offering-item">
+      <img src="C:\Users\chara\Downloads\5.jpg" alt="Modern" />
+      <p>Modern</p>
+    </div>
+    <div class="offering-item">
+      <img src="C:\Users\chara\Downloads\8.jpg" alt="Sleek Styles" />
+      <p>Sleek Styles</p>
+    </div>
+    <div class="offering-item">
+      <img src="C:\Users\chara\Downloads\6.jpg" alt="Stylish" />
+      <p>Stylish</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FashionLimit. All rights reserved.</p>
+  </footer>
 </body>
 </html>
